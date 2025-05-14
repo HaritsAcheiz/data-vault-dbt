@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  datavault:
+    - name: hub_aircraft
+      columns:
+        - name: hk_aircraft
+          data_type: char
+        - name: aircraft_code
+          data_type: char
+        - name: ingesttime
+          data_type: timestamp
+    - name: hub_seat
+      columns:
+        - name: hk_seat
+          data_type: char
+        - name: aircraft_code
+          data_type: char
+        - name: seat_no
+          data_type: char
+        - name: ingesttime
+          data_type: timestamp

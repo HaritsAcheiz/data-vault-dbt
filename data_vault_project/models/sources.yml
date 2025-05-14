@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging
+    database: demo 
+    schema: staging
+    tables:
+      - name: aircrafts_data
+      - name: seats
