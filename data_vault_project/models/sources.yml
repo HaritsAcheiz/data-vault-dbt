@@ -7,3 +7,4 @@ sources:
     tables:
       - name: aircrafts_data
       - name: seats
+      - name: flights

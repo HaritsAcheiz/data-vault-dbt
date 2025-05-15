@@ -6,10 +6,12 @@
 
 SELECT
   md5(
-   upper(trim(aircraft_code)) 
-    || '|'
-    || upper(trim(seat_no))
-   )
+  	upper(trim(aircraft_code))
+  	|| '|'
+  	|| upper(trim(seat_no))
+  ) AS hk_seat
+  ,aircraft_code
+  ,seat_no
+  ,fare_conditions
   ,current_timestamp(0) AS ingesttime
-  ,fare_conditions  
 FROM {{ source('staging', 'seats') }}

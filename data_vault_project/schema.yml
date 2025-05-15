@@ -20,3 +20,81 @@ models:
           data_type: char
         - name: ingesttime
           data_type: timestamp
+    - name: sat_aircraft
+      columns:
+        - name: hk_aircraft
+          data_type: char
+        - name: aircraft_code
+          data_type: char
+        - name: en_model
+          data_type: char
+        - name: ru_model
+          data_type: char
+        - name: range
+          data_type: int
+        - name: ingesttime
+          data_type: timestamp
+    - name: sat_seat
+      columns:
+        - name: hk_seat
+          data_type: char
+        - name: aircraft_code
+          data_type: char
+        - name: seat_no
+          data_type: char
+        - name: fare_conditions
+          data_type: char
+        - name: ingesttime
+          data_type: timestamp
+    - name: link_aircraft_seat
+      columns:
+        - name: lhk_aircraft_seat
+          data_type: char
+        - name: hk_aircraft
+          data_type: char
+        - name: hk_seat
+          data_type: char
+        - name: ingesttime
+          data_type: timestamp
+    - name: dm_seat_allocation
+      columns:
+        - name: aircraft_seat_key
+          data_type: char
+        - name: configuration_time
+          data_type: timestamp
+        - name: aircraft_code
+          data_type: char
+        - name: aircraft_model
+          data_type: char
+        - name: aircraft_model_ru
+          data_type: char
+        - name: aircraft_range
+          data_type: int
+        - name: seat_no
+          data_type: char 
+        - name: fare_conditions
+          data_type: char
+        - name: total_seats_in_aircraft
+          data_type: int
+    - name: dm_seat_allocation_enhancement
+      columns:
+        - name: aircraft_seat_key
+          data_type: char
+        - name: configuration_time
+          data_type: timestamp
+        - name: aircraft_code
+          data_type: char
+        - name: aircraft_model
+          data_type: char
+        - name: aircraft_model_ru
+          data_type: char
+        - name: aircraft_range
+          data_type: int
+        - name: seat_no
+          data_type: char 
+        - name: fare_conditions
+          data_type: char
+        - name: total_seats_in_aircraft
+          data_type: int
+        - name: total_flights_using_aircraft
+          data_type: int
